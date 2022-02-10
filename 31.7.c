@@ -1,0 +1,24 @@
+// C언어 코딩 도장
+// Chapter 31 심사문제
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n + i; j++)
+        {
+            if (j < n - i - 1)
+                printf(" ");
+            else
+                printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
