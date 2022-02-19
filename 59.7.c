@@ -1,0 +1,19 @@
+// C언어 코딩 도장
+// Chapter 59 연습문제
+
+#include <stdio.h>
+
+int main()
+{
+    int numArr[5] = { 11, 22, 33, 44, 55 };
+    int *numPtrA;
+    void *ptr;
+
+    numPtrA = &numArr[2];
+    ptr = numArr;
+
+    printf("%d\n", *(numPtrA + 2));
+    printf("%d\n", *((int *)ptr + 1));
+
+    return 0;
+}
